@@ -9,7 +9,7 @@ header {
 
 #title,
 #third_§ {
-  background-color: grey;
+  background-color: white;
 }
 
 section {
@@ -60,6 +60,7 @@ h1 {
 
 .btn__explore:hover {
   color: maroon;
+  box-shadow: 10px 5px 5px #9356DC;
 }
 
 .btn {
@@ -97,14 +98,14 @@ h2 {
   margin-right: auto;
   flex-direction: column;
   width: 90%;
-  background-color: yellow;
+  background-color: white;
 }
 
 body {
   font: 1em/100% Roboto, Arial, sans-serif;
   display: flex;
   flex-direction: column;
-  color: #616161;
+  color:whitesmoke;
 
 }
 
@@ -142,6 +143,11 @@ footer a {
   border-left-style: solid;
   border-top-width: 0px;
   border-top-style: solid;
+}
+
+.btn:hover,
+.btn_resto:hover {
+  box-shadow: 10px 5px 5px #9356DC;
 }
 
 img {

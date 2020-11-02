@@ -9,12 +9,13 @@ header {
 
 #title,
 #third_§ {
-  background-color: white;
+  background-color: #DCDCDC;
+  color: #000000;
+  padding-bottom: 30px;
 }
 
 section {
   text-align: center;
-  margin-bottom: 30px;
 }
 
 .btn__inactive {
@@ -34,7 +35,7 @@ section {
   padding-left: 25%;
 }
 
-h1 {
+h2 {
   text-align: center;
   margin: 50px 0 20px 0;
   font-size: x-large;
@@ -59,13 +60,26 @@ h1 {
 }
 
 .btn__explore:hover {
-  color: maroon;
   box-shadow: 10px 5px 5px #9356DC;
 }
 
 .btn {
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  padding: 20px 0px 20px 25px;
+  text-align: left;
+  border-radius: 20px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.btn span {
+  padding-left: 15px;
+}
+
+.btn .fas {
+  padding-left: 15px;
 }
 
 #second_§,
@@ -73,8 +87,8 @@ h1 {
   padding-top: 40px;
 }
 
-h2 {
-  margin: 0 0 30px 8%;
+h3 {
+  margin: 0 0 30px 4%;
   text-align: left;
   color: #000000;
 }
@@ -84,12 +98,15 @@ h2 {
   width: 6px;
   height: 6px;
   padding: 8px;
+  margin-top: 4%;
+  margin-left: -3%;
   background: purple;
   border: 2px solid #666;
   color: #ffffff;
   text-align: center;
   font: 12px Arial, sans-serif;
   line-height: 6px;
+  position: absolute;
 }
 
 #main {
@@ -105,12 +122,15 @@ body {
   font: 1em/100% Roboto, Arial, sans-serif;
   display: flex;
   flex-direction: column;
-  color:whitesmoke;
-
+  color: whitesmoke;
 }
 
 #second_§ {
   padding-bottom: 30px;
+}
+
+#second_§ i {
+  color: gray;
 }
 
 footer {
@@ -128,7 +148,6 @@ footer a {
   flex-direction: column;
 }
 
-.btn,
 .btn_resto {
   border-radius: 5%;
   margin-bottom: 15px;
@@ -153,7 +172,20 @@ footer a {
 img {
   width: 100%;
   border-radius: 10px 10px 0 0;
-  
+  position: relative;
+  z-index: 1;
+}
+
+.btn_test span {
+  z-index: 2;
+  float: right;
+  margin: 4% 0 0 -22%;
+  background-color: #99E2D0;
+  color: green;
+  padding: 5px 10px;
+  border-radius: 5%;
+  font-weight: bold;
+  position: absolute;
 }
 
 .btn_resto span {
@@ -168,6 +200,10 @@ img {
 footer p:first-child {
   font: 1em/100%, "Shrikhand", Arial, sans-serif;
   padding-bottom: 5px;
+}
+
+#purpose span {
+  padding-left: 7px;
 }
 
 /*# sourceMappingURL=main.css.map */

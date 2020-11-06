@@ -4,7 +4,9 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, inial-scale=1.0">
-    <link rel="stylesheet" href="The_Full_Palette.css"
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="The_Full_Palette.css">
     <title>The Full Palette</title>
     <script src="https://kit.fontawesome.com/927796ae42.js" crossorigin="anonymous"></script>
 
@@ -18,7 +20,9 @@
         <article>
 
             <header>
-                <a href="index.html" title="index"><button class="fas fa-arrow-left" type="button"></button></a>
+                <a href="index.html" title="index">
+                    <div class="fas fa-arrow-left fa-lg"></div>
+                </a>
 
                 <img src="images/ohmyfood.png" title="logo" alt="photo" id="Logo" />
 
@@ -27,59 +31,63 @@
 
             <section>
 
-                <div class="menu">
+
+                <article>
 
                     <img src="images/the_full_palette_page.jpg" title="the_full_palette_page" alt="photo"
-                        id="The Full Palette" />
+                        id="La_Palette_du_Goût" />
 
-                    <h1><strong>La Palette du Goût</strong></h1>
+                    <div id="menu">
+                        
+                        <h1><strong>La Palette du Goût</strong><i class="far fa-heart fa-2x"></i><i class="fas fa-heart 2x"></i></h1>
 
+                        <h3><span class="underline">ENTR</span>EES</h3>
 
-                    <h3><span class="underline">ENTR</span>EES</h3>
+                        <div class="btn_plat"><strong>Fricassée d'escargot</strong>
+                            <p>Au piment d'Espelette <span>25€</span></p>
+                        </div>
 
-                    <button class="btn_plat" type="button"><strong>Fricassée d'escargot</strong>
-                        <p>Au piment d'Espelette <span>25€</span></p>
-                    </button>
+                        <div class="btn_plat"><strong>Foie Gras de canard mi-cuit</strong>
+                            <p>Et ses copeaux de truffe noire <span>35€</span></p>
+                        </div>
 
-                    <button class="btn_plat" type="button"><strong>Foie Gras de canard mi-cuit</strong>
-                        <p>Et ses copeaux de truffe noire <span>35€</span></p>
-                    </button>
-
-                    <button class="btn_plat" type="button"><strong>Oeuf au plat</strong>
-                        <p>Assaisonné à la truffe sur lit de caviar <span>20€</span></p>
-                    </button>
-
-
-                    <h3><span class="underline">PLAT</span>S</h3>
-
-                    <button class="btn_plat" type="button"><strong>Filet de boeuf aux herbes</strong>
-                        <p>Accompagné de sa ribambelle de légumes <span>40€</span></p>
-                    </button>
-
-                    <button class="btn_plat" type="button"><strong>Parmentier de queue de boeuf</strong>
-                        <p>A la truffe noire sur sa purée de panais <span>35€</span></p>
-                    </button>
-
-                    <button class="btn_plat" type="button"><strong>Filet de Turbot</strong>
-                        <p>Aux agrumes <span>44€</span></p>
-                    </button>
+                        <div class="btn_plat"><strong>Oeuf au plat</strong>
+                            <p>Assaisonné à la truffe sur lit de caviar <span>20€</span></p>
+                        </div>
 
 
-                    <h3><span class="underline">DESS</span>ERTS</h3>
+                        <h3><span class="underline">PLAT</span>S</h3>
 
-                    <button class="btn_plat" type="button"><strong>Paris-Brest</strong>
-                        <p>Revisité <span>18€</span></p>
-                    </button>
+                        <div class="btn_plat"><strong>Filet de boeuf aux herbes</strong>
+                            <p>Accompagné de sa ribambelle de légumes <span>40€</span></p>
+                        </div>
 
-                    <button class="btn_plat" type="button"><strong>macaron au chocolat d'exception</strong>
-                        <p>Et glace à la vanille de Madagascar <span>22€</span></p>
-                    </button>
+                        <div class="btn_plat"><strong>Parmentier de queue de boeuf</strong>
+                            <p>A la truffe noire sur sa purée de panais <span>35€</span></p>
+                        </div>
 
-                    <button class="btn_plat" type="button"><strong>Mousse au chocolat</strong>
-                        <p>Au piment d'Espelette et à la truffe noire <span>23€</span></p>
-                    </button>
+                        <div class="btn_plat"><strong>Filet de Turbot</strong>
+                            <p>Aux agrumes <span>44€</span></p>
+                        </div>
 
-                </div>
+
+                        <h3><span class="underline">DESS</span>ERTS</h3>
+
+                        <div class="btn_plat"><strong>Paris-Brest</strong>
+                            <p>Revisité <span>18€</span></p>
+                        </div>
+
+                        <div class="btn_plat"><strong>Macaron au chocolat d'exception</strong>
+                            <p>Et glace à la vanille de Madagascar <span>22€</span></p>
+                        </div>
+
+                        <div class="btn_plat"><strong>Mousse au chocolat</strong>
+                            <p>Au piment d'Espelette et à la truffe noire <span>23€</span></p>
+                        </div>
+
+                    </div>
+
+                </article>
 
                 <button class="btn_order" type="button">Commander</button>
 
@@ -90,12 +98,16 @@
             <footer>
 
                 <p>ohmyfood</p>
-                <a href="*" style="text-decoration: none"><i class="fas fa-utensils">&nbsp; Proposer un
-                        restaurant</i></a><br>
-                <a href="*" style="text-decoration: none"><i class="fas fa-hands-helping">&nbsp; Devenir partneraire</i></a>
+                <div id="purpose">
+                    <p><a href="*" style="text-decoration: none"><i class="fas fa-utensils"></i><span>&nbsp; Proposez un
+                                restaurant</span></a></p>
+                </div>
+                <div id="partner">
+                    <p><a href="*" style="text-decoration: none"><i class="fas fa-hands-helping"></i><span>&nbsp;
+                                Devenir partenaire</span></a></p>
+                </div>
                 <p><a href="/" style="text-decoration: none">Mentions légales</a></p>
                 <p><a href="mailto:contact@ohmyfood.jp" style="text-decoration: none">Contact</a></p>
-
 
             </footer>
 

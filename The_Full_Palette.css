@@ -2,13 +2,20 @@ header {
     display: flex;
 }
 
+header a {
+    position: absolute;
+    left: 10%;
+    top: 3%;
+    color: #000000;
+}
+
 header button {
     background-color: #ffffff;
 }
 
 section {
     text-align: center;
-    background-color: gray;
+    background-color: #eceff1;
     padding-bottom: 30px;
 }
 
@@ -26,7 +33,6 @@ section {
 }
 
 body {
-    font: 1em/100% Roboto, Arial, sans-serif;
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -42,15 +48,24 @@ body {
     margin: -25% auto 0px auto;
     position: relative;
     padding-top: 0px;
-    background-color: gray;
+    background-color: #eceff1;
+}
+
+#menu i {
+    position: absolute;
+    top: 4.3%;
+    right: 7.5%;
+    cursor: pointer;
 }
 
 h1 {
     color: black;
     text-align: left;
-    margin-top: 8%;
-    margin-bottom: 8%;
+    margin: 8% 0px 8% 4%;
+    padding-top: 40px;
     font-family: 'Shrikhand', cursive;
+    font-size: 28px;
+    letter-spacing: 1px;
 }
 
 h3 {
@@ -58,13 +73,23 @@ h3 {
     text-align: left;
     margin-top: 8%;
     margin-bottom: 8%;
+    margin-left: 5%;
+    font-family: 'Roboto light 300';
+}
+
+h4 {
     font-family: 'Shrikhand', cursive;
+    font-size: larger;
 }
 
 .underline {
     border-bottom: 2px solid #99E2D0;
     padding-bottom: 8px;
 }
+
+.overflow-ellipsis {
+    text-overflow: ellipsis;
+  }
 
 .btn_plat {
     width: 90%;
@@ -73,19 +98,23 @@ h3 {
     border-radius: 20px;
     color: #000000;
     background-color: white;
-    font-weight: bold;
     text-align: left;
-    
+    font-size: larger;
+    font-family: 'Roboto light';
+
 }
 
 .btn_plat p {
     margin-top: 5px;
     margin-bottom: 10px;
+    font-style: normal;
+    font-size: large;
 }
 
 .btn_plat span {
     right: 10%;
     position: absolute;
+    font-weight: bold;
 }
 
 .btn_plat:hover {
@@ -117,39 +146,47 @@ h3 {
     cursor: pointer;
 }
 
-.btn_order:focus, .btn_plat:focus {
+.btn_order:focus,
+.btn_plat:focus {
     outline: none;
 }
 
 footer {
-    background-color:  #424242;
+    background-color: #424242;
     color: #ffffff;
     padding: 5%;
+    font-family: 'Roboto' 'light 300';
+    font-size: larger   ;
 }
 
 footer a {
     color: #ffffff;
 }
 
-footer p:first-child {
-    font-family: 'Shrikhand';
+footer p {  
     padding-bottom: 5px;
 }
 
-.fas {
+.fas,
+.fa {
     border: none;
+    font-size: 0.999em;
 }
 
 .fas.fa-heart {
     opacity: 0;
     margin-left: -20.5px;
     transition: all 1s ease-out;
-  }
-  
-  .fas.fa-heart:hover {
+}
+
+.fas.fa-heart:hover {
     opacity: 1;
     color: #9356DC;
-  }
+}
+
+.far.fa-heart:hover {
+    opacity: 0;
+}
 
 #purpose span {
     padding-left: 7px;

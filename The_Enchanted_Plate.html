@@ -4,7 +4,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, inial-scale=1.0">
-    <title>The Enchanted Plate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="The_Enchanted_Plate.css">
+    <title>La note enchantée</title>
     <script src="https://kit.fontawesome.com/927796ae42.js" crossorigin="anonymous"></script>
 
 </head>
@@ -12,12 +16,15 @@
 
 <body>
 
-    <div id="conteneur">
+    <div id="main">
 
         <article>
 
             <header>
-                <a href="index.html" title="index"><button class="fas fa-arrow-left" type="button"></button></a>
+
+                <a href="index.html" title="index">
+                    <div class="fas fa-arrow-left fa-lg"></div>
+                </a>
 
                 <img src="images/ohmyfood.png" title="logo" alt="photo" id="Logo" />
 
@@ -26,56 +33,68 @@
 
             <section>
 
-                <div class="menu">
+
+                <article>
 
                     <img src="images/the_enchanted_plate_page.jpg" title="the_enchanted_plate_page" alt="photo"
-                        id="The Enchanted Plate" />
+                        id="La_note_enchantee" />
 
-                    <h1><strong>La Note Enchantée</strong></h1>
+                    <div id="menu">
 
-
-                    <h2><span class="underline">ENTR</span>EES</h2>
-
-                    <button class="btn_plat" type="button"><strong>Ravioles de foie gras</strong>
-                        <p>Accompagnés de leur crème à la truffe <span>25€</span></p>
-                    </button>
-                    <button class="btn_plat" type="button"><strong>Cavia osciètre </strong>
-                        <p>Sur blini à la farine de blé noir <span>35€</span></p>
-                    </button>
-                    <button class="btn_plat" type="button"><strong>Homard et espuma de potiron</strong>
-                        <p>Mariné aux zestes d'orange <span>20€</span></p>
-                    </button>
-                    <button class="btn_plat" type="button"><strong>Foie gras de canard cuit entier</strong>
-                        <p>Configure de figue et pain toasté <span>35€</span></p>
-                    </button>
+                        <h1>La note enchantée<i class="far fa-heart fa-sm"></i><i class="fas fa-heart fa-sm"></i></h1>
 
 
-                    <h3><span class="underline">PLAT</span>S</h3>
+                        <h3><span class="underline">ENTR</span>ÉES</h3>
 
-                    <button class="btn_plat" type="button"><strong>Noix de coquilles Saint-Jacques</strong>
-                        <p>Sur lit de purée de céleri-rave <span>40€</span></p>
-                    </button>
-                    <button class="btn_plat" type="button"><strong>Langoustine Poêlée</strong>
-                        <p>Purée de patate douce <span>35€</span></p>
-                    </button>
-                    <button class="btn_plat" type="button"><strong>Mijoté de queue de boeuf</strong>
-                        <p>Et riz sauvage aux zestes de citron <span>44€</span></p>
-                    </button>
+                        <div class="btn_plat"><strong>Ravioles de foie gras</strong>
+                            <p class="overflow-ellipsis">Accompagné de leur crème à la truffe<span>25€</span></p>
+                        </div>
+
+                        <div class="btn_plat"><strong>Caviar osciètre</strong>
+                            <p class="overflow-ellipsis">Sur blini à la farine de blé noir<span>35€</span></p>
+                        </div>
+
+                        <div class="btn_plat"><strong>Homard et espuma de potiron</strong>
+                            <p class="overflow-ellipsis">Mariné aux zestes d'orange<span>20€</span></p>
+                        </div>
+
+                        <div class="btn_plat"><strong>Foie gras de canard cuit entier</strong>
+                            <p class="overflow-ellipsis">Confiture de figue et pain toasté<span>35€</span></p>
+                        </div>
 
 
-                    <h4><span class="underline">DESS</span>ERTS</h4>
+                        <h3><span class="underline">PLAT</span>S</h3>
 
-                    <button class="btn_plat" type="button"><strong>Macaron noisette et chocolat</strong>
-                        <p>Glace au caramel brun et sel de Guérande <span>18€</span></p>
-                    </button>
-                    <button class="btn_plat" type="button"><strong>Baba au rhum revisité</strong>
-                        <p>Avec son coulis de citron <span>22€</span></p>
-                    </button>
-                    <button class="btn_plat" type="button"><strong>Tarte au citron meringuée</strong>
-                        <p>Déstructurée <span>23e</span></p>
-                    </button>
+                        <div class="btn_plat"><strong>Noix de coquilles Saint-Jacques</strong>
+                            <p class="overflow-ellipsis">Sur lit de purée de céleri-rave<span>40€</span></p>
+                        </div>
 
-                </div>
+                        <div class="btn_plat"><strong>Langoustine poêlée</strong>
+                            <p class="overflow-ellipsis">Purée de patate douce<span>35€</span></p>
+                        </div>
+
+                        <div class="btn_plat"><strong>Mijoté de queue de boeuf</strong>
+                            <p class="overflow-ellipsis">Et riz sauvage aux zestes de citron<span>44€</span></p>
+                        </div>
+
+
+                        <h3><span class="underline">DESS</span>ERTS</h3>
+
+                        <div class="btn_plat"><strong>Macaron noisette et chocolat</strong>
+                           <p class="overflow-ellipsis">Glace au caramel brun et serl de Guérande<span>18€</span></p>
+                        </div>
+
+                        <div class="btn_plat"><strong>Baba au rhum revisité</strong>
+                            <p class="overflow-ellipsis">Avec son coulis de citron<span>22€</span></p>
+                        </div>
+
+                        <div class="btn_plat"><strong>Tarte au citron meringuée</strong>
+                            <p class="overflow-ellipsis">Destructurée<span>23€</span></p>
+                        </div>                       
+
+                    </div>
+
+                </article>
 
                 <button class="btn_order" type="button">Commander</button>
 
@@ -85,12 +104,17 @@
 
             <footer>
 
-                <img src="images/ohmyfood@2x.svg" title="logo_footer" alt="photo"><br>
-                <a href="*" style="text-decoration: none"><i class="fas fa-utensils">&nbsp; Proposer un restaurant</i></a><br>
-                <a href="*" style="text-decoration: none"><i class="fas fa-hands-helping">&nbsp; Devenir partenaire</i></a>
-                <p><a href="/" style="text-decoration: none">Mentions Légales</a></p>
+                <h4>ohmyfood</h4>
+                <div id="purpose">
+                    <p><a href="*" style="text-decoration: none"><i class="fas fa-utensils"></i><span>&nbsp; Proposez un
+                                restaurant</span></a></p>
+                </div>
+                <div id="partner">
+                    <p><a href="*" style="text-decoration: none"><i class="fas fa-hands-helping"></i><span>&nbsp;
+                                Devenir partenaire</span></a></p>
+                </div>
+                <p><a href="/" style="text-decoration: none">Mentions légales</a></p>
                 <p><a href="mailto:contact@ohmyfood.jp" style="text-decoration: none">Contact</a></p>
-
 
             </footer>
 

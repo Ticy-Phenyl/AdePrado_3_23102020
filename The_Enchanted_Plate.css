@@ -38,7 +38,7 @@ body {
     background-color: white;
 }
 
-#La_Palette_du_Goût {
+#La_note_enchantee {
     width: 100%;
 }
 
@@ -57,6 +57,10 @@ body {
     right: 7.5%;
     cursor: pointer;
 }
+
+.overflow-ellipsis {
+    text-overflow: ellipsis;
+  }
 
 h1 {
     color: black;
@@ -88,8 +92,10 @@ h4 {
 }
 
 .overflow-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis;
-  }
+}
 
 .btn_plat {
     width: 90%;
@@ -101,7 +107,6 @@ h4 {
     text-align: left;
     font-size: larger;
     font-family: 'Roboto light';
-
 }
 
 .btn_plat p {
@@ -155,15 +160,15 @@ footer {
     background-color: #424242;
     color: #ffffff;
     padding: 5%;
-    font-family: 'Roboto' 'light 300';
-    font-size: larger   ;
+    font-family: 'Roboto''light 300';
+    font-size: larger;
 }
 
 footer a {
     color: #ffffff;
 }
 
-footer p {  
+footer p {
     padding-bottom: 5px;
 }
 
@@ -190,4 +195,4 @@ footer p {
 
 #purpose span {
     padding-left: 7px;
-}
+}c

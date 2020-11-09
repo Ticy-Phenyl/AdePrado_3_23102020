@@ -9,5 +9,8 @@
   },
   "author": "",
   "license": "ISC",
-  "browserslist": "last 4 versions"
+  "browserslist": "last 4 versions",
+  "dependencies": {
+    "typeface-roboto-mono": "^1.1.13"
+  }
 }

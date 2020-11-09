@@ -133,6 +133,64 @@ h4 {
   font-size: larger;
 }
 
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+
+.loader::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10001;
+  overflow: hidden;
+  background: #0b0b0b;
+  opacity: 0.6;
+}
+
+.loader {
+  margin: 60px auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 1.1em solid #99e2d0;
+  border-right: 1.1em solid #FF79DA;
+  border-bottom: 1.1em solid #9356DC;
+  border-left: 1.1em solid #ffffff;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: OmF_spinner 1.1s infinite linear;
+  animation: OmF_spinner 1.1s infinite linear;
+}
+
+@-webkit-keyframes OmF_spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes OmF_spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
 .numberCircle {
   border-radius: 100%;
   width: 6px;
@@ -164,7 +222,7 @@ h4 {
 }
 
 body {
-  font-family: 'Roboto' sans-serif;
+  font-family: 'Roboto'sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,15 +237,15 @@ footer {
   background-color: #424242;
   color: #ffffff;
   padding: 5%;
-  font-family: 'Roboto' 'light 300';
-  font-size: larger   ;
+  font-family: 'Roboto''light 300';
+  font-size: larger;
 }
 
 footer a {
   color: #ffffff;
 }
 
-footer p {  
+footer p {
   padding-bottom: 5px;
 }
 
@@ -231,7 +289,8 @@ footer p:first-child {
   box-shadow: 10px 5px 5px #9356DC;
 }
 
-.btn_resto:focus, .btn__explore:focus {
+.btn_resto:focus,
+.btn__explore:focus {
   outline: none;
 }
 

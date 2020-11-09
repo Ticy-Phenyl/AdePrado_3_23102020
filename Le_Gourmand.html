@@ -4,7 +4,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, inial-scale=1.0">
-    <title>Le Gourmand </title>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="le_gourmand.css">
+    <title>Le Gourmand</title>
     <script src="https://kit.fontawesome.com/927796ae42.js" crossorigin="anonymous"></script>
 
 </head>
@@ -12,12 +16,15 @@
 
 <body>
 
-    <div id="conteneur">
+    <div id="main">
 
         <article>
 
             <header>
-                <a href="index.html" title="index"><button class="fas fa-arrow-left" type="button"></button></a>
+
+                <a href="index.html" title="index">
+                    <div class="fas fa-arrow-left fa-lg"></div>
+                </a>
 
                 <img src="images/ohmyfood.png" title="logo" alt="photo" id="Logo" />
 
@@ -26,52 +33,62 @@
 
             <section>
 
-                <div class="menu">
 
-                    <img src="images/le_gourmand_page.jpg" title="Le_Gourmand_page" alt="photo" id="Le Gourmand" />
+                <article>
 
-                    <h1><strong>Le Gourmand</strong></h1>
+                    <img src="images/le_gourmand_page.jpg" title="le_gourmand_page" alt="photo"
+                        id="Le_Gourmand" />
+
+                    <div id="menu">
+
+                        <h1>Le Gourmand<i class="far fa-heart fa-sm"></i><i class="fas fa-heart fa-sm"></i></h1>
+
+                        <h3><span class="underline">ENTR</span>ÉES</h3>
+
+                        <div class="btn_plat"><strong>Tartare de thon</strong>
+                            <p class="overflow-ellipsis">Assaisonné au yuzu<span>25€</span></p>
+                        </div>
+
+                        <div class="btn_plat"><strong>Bouchée de homard croustillant</strong>
+                            <p class="overflow-ellipsis">Et sa farandole de petits légumes<span>35€</span></p>
+                        </div>
+
+                        <div class="btn_plat"><strong>Velouté de cêpes</strong>
+                            <p>Aux truffes<span>20€</span></p>
+                        </div>
+
+                        <h3><span class="underline">PLAT</span>S</h3>
+
+                        <div class="btn_plat"><strong>Poulet rôti aux herbes de Provence</strong>
+                            <p class="overflow-ellipsis">Et sa crème de truffe<span>40€</span></p>
+                        </div>
+
+                        <div class="btn_plat"><strong>Langoustine rôtie</strong>
+                            <p class="overflow-ellipsis">Et ses légumes de saison<span>35€</span></p>
+                        </div>
+
+                        <div class="btn_plat"><strong>Côte de boeuf Angus</strong>
+                            <p class="overflow-ellipsis">Et sa purée de panais<span>44€</span></p>
+                        </div>
 
 
-                    <h2><span class="underline">ENTR</span>EES</h2>
+                        <h3><span class="underline">DESS</span>ERTS</h3>
 
-                    <button class="btn_plat" type="button"><strong>Tartare de thon</strong>
-                        <p>Assaisonné au yuzu <span>25€</span></p>
-                    </button>
-                    <button class="btn_plat" type="button"><strong>Bouchée de homard croustillant</strong>
-                        <p>Et sa farandole de petits légumes <span>35€</span></p>
-                    </button>
-                    <button class="btn_plat" type="button"><strong>Velouté de cêpes</strong>
-                        <p>Aux truffes <span>20€</span></p>
-                    </button>
+                        <div class="btn_plat"><strong>Farandole de desserts</strong>
+                            <p>Du chef<span>18€</span></p>
+                        </div>
 
+                        <div class="btn_plat"><strong>Crème Brulée</strong>
+                            <p>Revisitée<span>22€</span></p>
+                        </div>
 
-                    <h3><span class="underline">PLAT</span>S</h3>
+                        <div class="btn_plat"><strong>Tiramisu</strong>
+                            <p>À la noisette<span>23€</span></p>
+                        </div>                       
 
-                    <button class="btn_plat" type="button"><strong>Poulet rôti aux herbes de Provence</strong>
-                        <p>Et sa crème de truffe <span>40€</span></p>
-                    </button>
-                    <button class="btn_plat" type="button"><strong>Langouste rôtie</strong>
-                        <p>Et ses légumes de saison <span>35€</span></p>
-                    </button>
-                    <button class="btn_plat" type="button"><strong>Côte de boeuf Angus</strong>
-                        <p>Et sa purée de panais <span>44€</span></p>
-                    </button>
+                    </div>
 
-
-                    <h4><span class="underline">DESS</span>ERTS</h4>
-
-                    <button class="btn_plat" type="button"><strong>Farandole de desserts</strong>
-                        <p>Du chef<span>18€</span></p>
-                    </button>
-                    <button class="btn_plat" type="button"><strong>Crème Brulée</strong>
-                        <p>Revisitée <span>22€</span></p>
-                    </button>
-                    <button class="btn_plat" type="button"><strong>Tiramisu</strong>
-                        <p>À la noisette <span>23€</span></p>
-                    </button>
-
-                </div>
+                </article>
 
                 <button class="btn_order" type="button">Commander</button>
 
@@ -81,12 +98,17 @@
 
             <footer>
 
-                <img src="images/ohmyfood@2x.svg" title="logo_footer" alt="photo"><br>
-                <a href="*" style="text-decoration: none"><i class="fas fa-utensils">&nbsp; Proposer un restaurant</i></a><br>
-                <a href="*" style="text-decoration: none"><i class="fas fa-hands-helping">&nbsp; Devenir partneraire</i></a>
-                <p><a href="/" style="text-decoration: none">Mentions Légales</a></p>
+                <h4>ohmyfood</h4>
+                <div id="purpose">
+                    <p><a href="*" style="text-decoration: none"><i class="fas fa-utensils"></i><span>&nbsp; Proposez un
+                                restaurant</span></a></p>
+                </div>
+                <div id="partner">
+                    <p><a href="*" style="text-decoration: none"><i class="fas fa-hands-helping"></i><span>&nbsp;
+                                Devenir partenaire</span></a></p>
+                </div>
+                <p><a href="/" style="text-decoration: none">Mentions légales</a></p>
                 <p><a href="mailto:contact@ohmyfood.jp" style="text-decoration: none">Contact</a></p>
-
 
             </footer>
 

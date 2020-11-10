@@ -79,6 +79,22 @@ h3 {
     margin-bottom: 8%;
     margin-left: 5%;
     font-family: 'Roboto light 300';
+    animation-duration: 3s;
+    animation-delay: 0ms;
+    animation-name: affichage_menu;
+    animation-iteration-count: initial;
+}
+
+@keyframes affichage_menu {
+    from {
+      margin-top: 100%;
+      width: 100%;
+    }
+  
+    to {
+      margin-bottom: 0%;
+      width: 100%;
+    }
 }
 
 h4 {

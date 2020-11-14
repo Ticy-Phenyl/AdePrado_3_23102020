@@ -15,6 +15,9 @@ header {
   background-color: #DCDCDC;
   color: #000000;
   padding-bottom: 30px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #third_§ {
@@ -53,8 +56,9 @@ section {
 }
 
 h2 {
+  width: 80%;
   text-align: center;
-  margin: 50px 0 20px 0;
+  margin: 50px auto 20px auto;
   font-size: x-large;
   color: #000000;
   line-height: initial;
@@ -84,6 +88,8 @@ h2 {
   display: flex;
   flex-direction: column;
   width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #boutons_menu i:hover {
@@ -91,9 +97,8 @@ h2 {
 }
 
 .btn {
-  width: 100%;
-  margin-bottom: 20px;
-  margin-top: 0px;
+  width: 80%;
+  margin: 0px auto 20px auto;
   padding: 20px 8px 20px 8px;
   border-radius: 20px;
   color: #000000;
@@ -133,78 +138,103 @@ h4 {
   font-size: larger;
 }
 
-.loader,
-.loader:after {
+.spinner, .spinner::after {
   border-radius: 50%;
   width: 10em;
   height: 10em;
+} 
+
+.spinner {
+  margin: 60px auto;
+  font-size: 10px;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  right: 30%;
+  
 }
 
-.loader::before {
+.spinner::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 10001;
   overflow: hidden;
-  background: #0b0b0b;
-  opacity: 0.6;
+  opacity: 0;
 }
 
-.loader {
-  margin: 60px auto;
-  font-size: 10px;
-  position: relative;
-  text-indent: -9999em;
-  border-top: 1.1em solid #99e2d0;
-  border-right: 1.1em solid #FF79DA;
-  border-bottom: 1.1em solid #9356DC;
-  border-left: 1.1em solid #ffffff;
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation: OmF_spinner 1.1s infinite linear;
-  animation: OmF_spinner 1.1s infinite linear;
+.spinner::after {
+  box-sizing: border-box;
+  z-index: 10002;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  border-top: 3px solid #99e2d0;
+  border-left: 3px solid #9356DC;
+  border-right: 3px solid #FF79DA;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: loader 3s;
+  opacity: 0;
 }
 
-@-webkit-keyframes OmF_spinner {
+@keyframes loader {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+    opacity: 1;
   }
 
   100% {
-    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
+    opacity: 0;
   }
 }
 
-@keyframes OmF_spinner {
+.background_spinner {
+  content: "";
+  position: absolute;
+  color: white;
+  animation: loading_background 4s;
+  background-color: currentColor;
+}
+
+@keyframes loading_background {
   0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+    color: #9356DC;
+    width: 100%;
+    height: 100%;
+  }
+
+  45% {
+    color: #FF79DA;
+  }
+
+  66% {
+    color: #99E2D0;
   }
 
   100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+    color: #ffffff;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
   }
 }
 
 .numberCircle {
   border-radius: 100%;
-  width: 6px;
-  height: 6px;
-  padding: 8px;
-  margin-top: 4%;
-  margin-left: -3%;
+  padding: 6px 8px 6px 8px;
+  margin-left: -5%;
   background: purple;
-  border: 2px solid #666;
   color: #ffffff;
   text-align: center;
   font: 12px Arial, sans-serif;
   line-height: 6px;
-  position: absolute;
+  position: sticky;
 }
 
 #main {
@@ -222,6 +252,7 @@ h4 {
 }
 
 body {
+  width: 100%;
   font-family: 'Roboto'sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -231,6 +262,7 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   color: whitesmoke;
+  margin: 0px;
 }
 
 footer {

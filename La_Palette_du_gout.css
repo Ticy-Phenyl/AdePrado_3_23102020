@@ -53,7 +53,7 @@ body {
 
 #menu i {
     position: absolute;
-    top: 4.3%;
+    top: 57%;
     right: 7.5%;
     cursor: pointer;
 }
@@ -70,10 +70,12 @@ h1 {
     font-family: 'Shrikhand', cursive;
     font-size: 28px;
     letter-spacing: 1px;
+    position: relative;
 }
 
 h3 {
     color: black;
+    height: 35px;
     text-align: left;
     margin-top: 8%;
     margin-bottom: 8%;
@@ -97,6 +99,27 @@ h3 {
     }
   }
 
+.far.fa-check-circle {
+    display: flex   ;
+    background-color: white;
+    color: #99E2D0;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-name: daphné;
+    animation-iteration-count: initial;
+} 
+
+@keyframes daphné {
+    from {
+        margin-right: 100%;
+        width: 100%;
+    }
+
+    to {
+        margin-left: -90%;
+    }
+}
+
 h4 {
     font-family: 'Shrikhand', cursive;
     font-size: larger;
@@ -112,6 +135,7 @@ h4 {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
 
 .btn_plat {
     width: 90%;
@@ -137,6 +161,7 @@ h4 {
     position: absolute;
     font-weight: bold;
 }
+
 
 .btn_plat:hover {
     -webkit-box-shadow: 10px 5px 5px #9356DC;

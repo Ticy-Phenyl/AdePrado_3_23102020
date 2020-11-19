@@ -51,8 +51,8 @@ body {
     background-color: #eceff1;
 }
 
-#menu i {
-    position: absolute;
+h1 i {
+    position: initial;
     top: 57%;
     right: 7.5%;
     cursor: pointer;
@@ -60,7 +60,26 @@ body {
 
 .overflow-ellipsis {
     text-overflow: ellipsis;
-  }
+}
+
+.check {
+    float: right;
+    width: 20%;
+    height: 73px;
+    position: absolute;
+    right: 2%;
+    top: 20.2%;
+    background-color: aqua;
+    margin-left: 0px;
+    margin-top: -15%;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+    display: none;
+}
+
+.btn_plat:hover .check_over {
+    display: flex;
+}
 
 h1 {
     color: black;
@@ -71,6 +90,10 @@ h1 {
     font-size: 28px;
     letter-spacing: 1px;
     position: relative;
+}
+
+h1 strong {
+    margin-right: 55px;
 }
 
 h3 {
@@ -89,34 +112,13 @@ h3 {
 
 @keyframes affichage_menu {
     from {
-      margin-top: 100%;
-      width: 100%;
-    }
-  
-    to {
-      margin-bottom: 0%;
-      width: 100%;
-    }
-  }
-
-.far.fa-check-circle {
-    display: flex   ;
-    background-color: white;
-    color: #99E2D0;
-    animation-duration: 2s;
-    animation-delay: 3s;
-    animation-name: daphné;
-    animation-iteration-count: initial;
-} 
-
-@keyframes daphné {
-    from {
-        margin-right: 100%;
+        margin-top: 100%;
         width: 100%;
     }
 
     to {
-        margin-left: -90%;
+        margin-bottom: 0%;
+        width: 100%;
     }
 }
 
@@ -147,6 +149,7 @@ h4 {
     text-align: left;
     font-size: larger;
     font-family: 'Roboto light';
+    position: relative;
 }
 
 .btn_plat p {
@@ -157,18 +160,37 @@ h4 {
 }
 
 .btn_plat span {
-    right: 10%;
-    position: absolute;
+    float: right;
+    margin-right: 3%;
     font-weight: bold;
 }
 
+.check_over {
+    width: 15%;
+    height: 100%;
+    position: absolute;
+    right: -0.5%;
+    background-color: #99E2D0;
+    border-bottom-right-radius: 20%;
+    border-top-right-radius: 20%;
+    top: 1%;
+    display: none;
+}
+
+.far.fa-check-circle {
+    margin: auto;
+    color: #99E2D0;
+    background-color: #ffffff;
+    border-radius: 100%;
+}
 
 .btn_plat:hover {
-    -webkit-box-shadow: 10px 5px 5px #9356DC;
-    box-shadow: 10px 5px 5px #9356DC;
+    -webkit-box-shadow: 5px 5px 5px #9356DC;
+    box-shadow: 5px 5px 5px #9356DC;
     background-color: whitesmoke;
     cursor: pointer;
     transition: 0.5s;
+    display: block;
 }
 
 .btn_order {
@@ -221,7 +243,7 @@ footer p {
 
 .fas.fa-heart {
     opacity: 0;
-    margin-left: -20.5px;
+    margin-left: -25.7px;
     transition: all 1s ease-out;
 }
 

@@ -67,6 +67,7 @@ h1 i {
 .btn_plat:hover .check_over {
     display: flex;
     animation: future_check 950ms both;
+    -webkit-animation: future_check 950ms both;
     
 }
 
@@ -95,9 +96,26 @@ h3 {
     animation-delay: 0ms;
     animation-name: affichage_menu;
     animation-iteration-count: initial;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 0ms;
+    -webkit-animation-name: affichage_menu;
+    -webkit-animation-iteration-count: initial;
+}
 }
 
 @keyframes affichage_menu {
+    from {
+        margin-top: 100%;
+        width: 100%;
+    }
+
+    to {
+        margin-bottom: 0%;
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes affichage_menu {
     from {
         margin-top: 100%;
         width: 100%;
@@ -183,6 +201,16 @@ h4 {
     }
 }
 
+@-webkit-keyframes future_check {
+    from {
+        margin-right: -4.2em;
+    }
+
+    to {
+        margin-right: 0;
+    }
+}
+
 .fas.fa-check {
     margin: auto;
     color: #99E2D0;
@@ -192,6 +220,10 @@ h4 {
     animation: rotate_i 1s both;
     animation-delay: 50ms;
     animation-iteration-count: initial;
+    -webkit-animation: rotate_i 1s both;
+    -webkit-animation-delay: 50ms;
+    -webkit-animation-iteration-count: initial;
+
 }
 
 .btn_plat:hover {
@@ -269,6 +301,16 @@ footer p {
 
     to {
         transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotate_i {
+    from {
+        -webkit-transform: rotate(90deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
     }
 }
 

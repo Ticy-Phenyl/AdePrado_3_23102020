@@ -101,7 +101,7 @@ h3 {
     -webkit-animation-name: affichage_menu;
     -webkit-animation-iteration-count: initial;
 }
-}
+
 
 @keyframes affichage_menu {
     from {
@@ -265,7 +265,7 @@ footer {
     background-color: #424242;
     color: #ffffff;
     padding: 5%;
-    font-family: 'Roboto''light 300';
+    font-family: 'roboto''light 300';
     font-size: larger;
 }
 

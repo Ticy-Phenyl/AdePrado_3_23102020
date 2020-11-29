@@ -20,7 +20,12 @@ header {
   margin-right: auto;
 }
 
-#third_§ {
+#title p {
+  line-height: 1.2em;
+  font-size: 1.1em;
+}
+
+.third_§ {
   background-color: #DCDCDC;
   color: #000000;
   padding-bottom: 30px;
@@ -40,6 +45,8 @@ section {
 
 .btn__inactive {
   width: 100%;
+  font-size: 18px;
+  background: #e5e5de;
   border-radius: 0%;
   padding: 15px 0 15px 0;
   border-right-width: 0px;
@@ -49,6 +56,7 @@ section {
   border-left-style: solid;
   border-bottom-width: 0px;
   border-top: none;
+
 }
 
 .btn__inactive div {
@@ -70,11 +78,11 @@ h2 {
   text-align: center;
   display: inline-block;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1.1em;
   margin: 4px 2px;
   border-radius: 2rem;
   border: #9356DC;
-  background-color: #9356DC;
+  background-image: linear-gradient(#FF79DA, #9356DC);
   color: #ffffff;
   transition: 1s;
 }
@@ -82,23 +90,16 @@ h2 {
 .btn__explore:hover {
   -webkit-box-shadow: 10px 5px 5px #9356DC;
   box-shadow: 10px 5px 5px #9356DC;
-  background-color: #be99ea;
 }
 
 #boutons_menu {
-  display: flex;
-  flex-direction: column;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
 
-#boutons_menu i:hover {
-  color: #9356DC;
-}
-
 .btn {
-  width: 80%;
+  width: 90%;
   height: 19px;
   margin: 0px auto 20px auto;
   padding: 20px 8px 20px 8px;
@@ -109,6 +110,7 @@ h2 {
   transition: 1s;
   text-align: left;
   outline: none;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -118,21 +120,25 @@ h2 {
 }
 
 .contenu_btn {
-  display: flex;
   margin-top: -20px;
   margin-left: 15px;
+  font-size: 1em;
 }
 
-#second_§ {
+.second_§ {
   padding-top: 40px;
   padding-bottom: 30px;
 }
 
-#second_§ i {
-  color: gray;
-  margin-left: 25px;
+.second_§ i {
+  color: #868181;
+  margin-left: 5%;
   padding-left: 0px;
-  padding-right: 25px;
+  padding-right: 8%;
+}
+
+.btn:hover i {
+  color: #9356dc;
 }
 
 h3 {
@@ -255,7 +261,7 @@ h4 {
 
 .numberCircle {
   border-radius: 100%;
-  padding: 6px 8px 6px 8px;
+  padding: 6px 11px 6px 11px;
   margin-left: -15px;
   background: purple;
   color: #ffffff;
@@ -281,6 +287,7 @@ h4 {
 body {
   width: 100%;
   font-family: 'Roboto', 'calibri', sans-serif;
+  font-size: 1.1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -308,6 +315,12 @@ footer p {
   padding-bottom: 5px;
 }
 
+.stack-fa {
+  position: absolute;
+  right: 1em;
+  bottom: 1em;
+}
+
 .fas.fa-heart {
   opacity: 0;
   margin-left: -20.5px;
@@ -318,6 +331,10 @@ footer p {
   opacity: 1;
   color: #9356DC;
   outline: none;
+}
+
+.far.fa-heart:hover {
+  opacity: 0;
 }
 
 footer p:first-child {
@@ -354,12 +371,11 @@ footer p:first-child {
   outline: none;
 }
 
-.btn_resto span {
+.btn_resto {
   padding-left: -15px;
 }
 
 .texte_menu span {
-  text-align: justify;
   margin-bottom: 0px;
   margin-top: 5px;
   padding-left: 0px;
@@ -379,7 +395,7 @@ img {
   z-index: 1;
 }
 
-.btn_nouveau span {
+.btn_nouveau p {
   z-index: 2;
   float: right;
   margin: 4% 0 0 -28%;
@@ -389,8 +405,8 @@ img {
   border-radius: 5%;
   font-weight: bold;
   position: absolute;
-  top: 5%;
-  right: 5%;
+  top: 1em;
+  right: 1em;
 }
 
 .texte_menu {
@@ -403,6 +419,62 @@ img {
 
 #purpose span {
   padding-left: 7px;
+}
+
+
+@media screen and (min-width: 425px) {
+  .contenu_btn {
+    font-size: 1.2em;
+  }
+}
+
+
+@media screen and (min-width: 760px) {
+
+  #boutons_menu {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .texte_menu {
+    text-align: center;
+  }
+
+  .btn {
+    height: auto;
+  }
+
+  .btn__explore {
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.6em;
+    text-align: center;
+  }
+
+  h4 {
+    margin-top: 0px;
+    text-align: center;
+    font-size: 2.2em;
+  }
+
+  #content_footer {
+    text-align: center;
+    display: block;
+  }
+
+  .stack-fa {
+    position: relative;
+    right: 0;
+    bottom: 0;
+  }
+
+
+
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -87,7 +87,7 @@ h2 {
   transition: 1s;
 }
 
-.btn__explore:hover {
+.btn__explore: {
   -webkit-box-shadow: 10px 5px 5px #9356DC;
   box-shadow: 10px 5px 5px #9356DC;
 }
@@ -96,13 +96,13 @@ h2 {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  outline: none;
 }
 
 .btn {
   width: 90%;
-  height: 19px;
   margin: 0px auto 20px auto;
-  padding: 20px 8px 20px 8px;
+  padding: 15px 8px 15px 8px;
   border-radius: 20px;
   color: #000000;
   background-color: rgb(227, 227, 227);
@@ -134,11 +134,18 @@ h2 {
   color: #868181;
   margin-left: 5%;
   padding-left: 0px;
-  padding-right: 8%;
+  padding-right: 2%;
 }
 
 .btn:hover i {
   color: #9356dc;
+}
+
+.stack-fa {
+  position: absolute;
+  right: 1em;
+  bottom: 1em;
+  font-size: larger;
 }
 
 h3 {
@@ -295,7 +302,6 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  color: whitesmoke;
   margin: 0px;
 }
 
@@ -315,26 +321,17 @@ footer p {
   padding-bottom: 5px;
 }
 
-.stack-fa {
-  position: absolute;
-  right: 1em;
-  bottom: 1em;
-}
-
 .fas.fa-heart {
   opacity: 0;
-  margin-left: -20.5px;
+  margin-left: -26px;
   transition: all 1s ease-out;
+  display: initial;
 }
 
 .fas.fa-heart:hover {
   opacity: 1;
   color: #9356DC;
   outline: none;
-}
-
-.far.fa-heart:hover {
-  opacity: 0;
 }
 
 footer p:first-child {
@@ -381,12 +378,6 @@ footer p:first-child {
   padding-left: 0px;
 }
 
-.like_btn {
-  margin-right: 5%;
-  position: absolute;
-  right: 2%;
-  bottom: 2em;
-}
 
 img {
   width: 100%;
@@ -443,8 +434,10 @@ img {
   }
 
   .btn {
-    height: auto;
+    margin-right: 1em;
+    margin-left: 1em;
   }
+
 
   .btn__explore {
     margin-top: 2em;
@@ -467,11 +460,6 @@ img {
     display: block;
   }
 
-  .stack-fa {
-    position: relative;
-    right: 0;
-    bottom: 0;
-  }
 
 
 

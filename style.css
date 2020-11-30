@@ -42,7 +42,7 @@ section {
 }
 
 body {
-    display: flex;
+    display: initial;
     flex-direction: column;
     background-color: white;
     font-family: 'roboto', 'calibri', sans-serif;

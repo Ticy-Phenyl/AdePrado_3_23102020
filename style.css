@@ -25,7 +25,7 @@ section {
     display: flex;
     top: 1.3em;
     left: 1.1em;
-    color: #929191;
+    color: #000000;
 }
 
 #Logo {
@@ -270,11 +270,6 @@ h4 {
     cursor: pointer;
 }
 
-.btn_order:focus,
-.btn_plat:focus {
-    outline: none;
-}
-
 footer {
     background-color: #424242;
     color: #ffffff;
@@ -343,6 +338,10 @@ footer p {
         text-align: center;
     }
 
+    #logo_index i:hover {
+        color: #9356DC;
+    }
+
     .restos {
         display: flex;
         flex-direction: row;
@@ -384,6 +383,11 @@ footer p {
 
     h1 strong {
         font-size: 1.8em;
+    }
+
+    h1 i {
+        position: absolute;
+        margin: 0 0 0 2.9em;
     }
 
     h3 {

@@ -419,10 +419,6 @@ footer p:first-child {
   outline: none;
 }
 
-.btn_resto {
-  padding-left: -15px;
-}
-
 .texte_menu span {
   margin-bottom: 0px;
   margin-top: 5px;
@@ -510,10 +506,71 @@ img {
     text-align: center;
     display: block;
   }
-
-
-
-
 }
+
+@keyframes affichage_menu {
+  from {
+      margin-top: 100%;
+      width: 100%;
+  }
+
+  to {
+      margin-bottom: 0%;
+      width: 100%;
+  }
+}
+
+@-webkit-keyframes affichage_menu {
+  0% {
+      margin-top: 100%;
+      width: 100%;
+  }
+
+  100% {
+      margin-bottom: 0%;
+      width: 100%;
+  }
+}
+
+@keyframes future_check {
+  from {
+      margin-right: -4.2em;
+  }
+
+  to {
+      margin-right: 0;
+  }
+}
+
+@-webkit-keyframes future_check {
+  0% {
+      margin-right: -4.2em;
+  }
+
+  100% {
+      margin-right: 0;
+  }
+}
+
+@keyframes rotate_i {
+    from {
+        transform: rotate(90deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotate_i {
+    0% {
+        transform: rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 
 /*# sourceMappingURL=main.css.map */

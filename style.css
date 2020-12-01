@@ -125,12 +125,12 @@ h3 {
 }
 
 @-webkit-keyframes affichage_menu {
-    from {
+    0% {
         margin-top: 100%;
         width: 100%;
     }
 
-    to {
+    100% {
         margin-bottom: 0%;
         width: 100%;
     }
@@ -216,11 +216,11 @@ h4 {
 }
 
 @-webkit-keyframes future_check {
-    from {
+    0% {
         margin-right: -4.2em;
     }
 
-    to {
+    100% {
         margin-right: 0;
     }
 }
@@ -279,7 +279,7 @@ footer {
     background-color: #424242;
     color: #ffffff;
     padding: 5%;
-    font-family: 'oboto''light 300';
+    font-family: 'roboto light';
     font-size: larger;
 }
 
@@ -320,11 +320,11 @@ footer p {
 }
 
 @-webkit-keyframes rotate_i {
-    from {
+    0% {
         transform: rotate(90deg);
     }
 
-    to {
+    100% {
         transform: rotate(360deg);
     }
 }

@@ -87,7 +87,8 @@ h2 {
   transition: 1s;
 }
 
-.btn__explore: {
+.btn__explore:hover {
+  cursor: pointer;
   -webkit-box-shadow: 10px 5px 5px #9356DC;
   box-shadow: 10px 5px 5px #9356DC;
 }
@@ -188,6 +189,7 @@ h4 {
   border-right: 3px solid #9356dc;
   border-radius: 50%;
   animation: loader 3s;
+  -webkit-animation: loader 3s;
   opacity: 0;
 }
 
@@ -206,6 +208,7 @@ h4 {
   width: 50px;
   height: 50px;
   animation: loader_mini 3s;
+  -webkit-animation: loader_mini 3s;
   opacity: 0;
 }
 
@@ -233,17 +236,65 @@ h4 {
   }
 }
 
+@-webkit-keyframes loader {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes loader_mini {
+  0% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate(0deg);
+    opacity: 0;
+  }
+}
+
 .background_spinner {
   content: "";
   position: absolute;
   color: white;
   animation: loading_background 4s;
+  -webkit-animation: loading_background 4s;
   background-color: currentColor;
   height: 300%;
   z-index: 4;
 }
 
 @keyframes loading_background {
+  0% {
+    color: #9356DC;
+    width: 100%;
+    opacity: 1;
+  }
+
+  45% {
+    color: #FF79DA;
+  }
+
+  66% {
+    color: #99E2D0;
+  }
+
+  100% {
+    color: #ffffff;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@-webkit-keyframes loading_background {
   0% {
     color: #9356DC;
     width: 100%;
@@ -309,7 +360,7 @@ footer {
   background-color: #424242;
   color: #ffffff;
   padding: 5%;
-  font-family: 'Roboto''light 300';
+  font-family: 'Roboto light';
   font-size: larger;
 }
 

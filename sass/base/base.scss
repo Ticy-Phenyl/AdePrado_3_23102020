@@ -1,0 +1,72 @@
+  //Commun//
+
+  body {
+    width: 100%;
+    font-family: 'Roboto', 'calibri', sans-serif;
+    font-size: 1.1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0px;
+    color: #424242;
+  }
+
+  section {
+    text-align: center;
+    background-color: #eceff1;
+  }
+
+
+  h1 {
+    color: #424242;
+    text-align: left;
+    margin: 8% 0px 8% 4%;
+    padding-top: 40px;
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    position: relative;
+  }
+
+  h3 {
+    color: black;
+    height: 35px;
+    text-align: left;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    margin-left: 5%;
+    font-family: 'Roboto light 300', sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    animation-duration: 3s;
+    animation-delay: 0ms;
+    animation-name: affichage_menu;
+    animation-iteration-count: initial;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 0ms;
+    -webkit-animation-name: affichage_menu;
+    -webkit-animation-iteration-count: initial;
+  }
+
+  h4 {
+    font-size: larger;
+    font-family: 'Shrikhand', cursive;
+  }
+
+  h5 {
+    margin: 0 0 30px 5%;
+    text-align: left;
+    color: #424242;
+    font-size: 1.2em;
+  }
+
+  @media screen and (min-width: 760px) {
+    h4 {
+      text-align: center;
+      font-size: 2.2em;
+    }
+  }

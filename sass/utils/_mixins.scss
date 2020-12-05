@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 @mixin footer {
@@ -39,4 +40,47 @@
     -webkit-animation: rotate_i 1s both;
     -webkit-animation-delay: 50ms;
     -webkit-animation-iteration-count: initial;
+=======
+
+
+@mixin footer {
+    background-color: $color_font-footer;
+    color: $color_white;
+    padding: 5%;
+    font-family: 'Roboto''light 300';
+    font-size: larger;
+}
+
+@mixin btn_resto {
+    border-radius: 5%;
+    margin-bottom: 15px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 15px;
+    border-right-width: 0px;
+    border-right-style: solid;
+    border-left-width: 0px;
+    border-left-style: solid;
+    border-top-width: 0px;
+    border-top-style: solid;
+    position: relative;
+    background-color: $color_white;
+}
+
+@mixin fas-fa-check {
+    margin: auto;
+    color: $color_third;
+    background-color: $color_white;
+    padding: 5px;
+    border-radius: 100%;
+    animation: rotate_i 1s both;
+    animation-delay: 50ms;
+    animation-iteration-count: initial;
+    -webkit-animation: rotate_i 1s both;
+    -webkit-animation-delay: 50ms;
+    -webkit-animation-iteration-count: initial;
+>>>>>>> 353c3f05a2d5b85d17c7ab0f6b7c1c6dab2f0539
 }

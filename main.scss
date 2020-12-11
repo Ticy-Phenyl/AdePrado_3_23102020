@@ -1,9 +1,12 @@
-@import "sass/utils/variables";
+@import "sass/utils/_variables";
 @import "sass/utils/_keyframes.scss";
 @import "sass/utils/_mixins.scss";
 
 @import "sass/components/_buttons.scss";
-@import "sass/base/base.scss";
+
+@import "sass/pages/_heart.scss";
+
+@import "sass/base/_base.scss";
 
 @import "sass/layout/_footer.scss";
 
@@ -14,10 +17,15 @@
 header {
 	display: block;
 	text-align: center;
+
+	button {
+		background-color: $color_white;
+	}
 }
 
-header button {
-	background-color: $color_white;
+#Logo {
+	margin: 10px auto;
+	width: 50%;
 }
 
 #logo_index {
@@ -25,20 +33,16 @@ header button {
 	margin-left: auto;
 	margin-right: auto;
 	font-size: 1.2em;
-}
 
-#logo_index i {
-	font-size: larger;
-	position: absolute;
-	display: flex;
-	top: 0.5em;
-	left: 1.1em;
-	color: $color_font-footer;
-}
+	i {
+		font-size: larger;
+		position: absolute;
+		display: flex;
+		top: 0.5em;
+		left: 1.1em;
+		color: $color_font-footer;
+	}
 
-#Logo {
-	margin: 10px auto;
-	width: 50%;
 }
 
 #titre_page_resto {
@@ -49,18 +53,7 @@ header button {
 	align-items: center;
 	margin-bottom: 1.1em;
 }
-.heart_place {
-	display: flex;
-	position: relative;
-	margin: 1.3em 0.5em 0 0;
-	font-size: x-large;
-}
-.heart_index {
-	display: flex;
-	position: initial;
-	font-size: xx-large;
-	margin: -0.7em 0.5em 0 0;
-}
+
 .infos_resto_index {
 	display: flex;
 	flex-direction: column;
@@ -68,19 +61,13 @@ header button {
 	justify-content: space-between;
 	text-align: left;
 	margin-left: 0.5em;
+
 	p {
 		display: inline-flex;
 		justify-content: inherit;
 		margin-top: 0.4em;
 	}
 }
-
-h6 {
-	font-size: 1.1em;
-	margin-bottom: 0px;
-	margin-top: 0.7em;
-}
-
 
 #main {
 	display: flex;
@@ -103,20 +90,6 @@ h6 {
 	background-color: #eceff1;
 }
 
-h1 i {
-	position: initial;
-	float: right;
-	margin-top: 1.5%;
-	margin-right: 6%;
-	cursor: pointer;
-}
-
-.btn_plat:hover .check_over {
-	display: flex;
-	animation: future_check 950ms both;
-	-webkit-animation: future_check 950ms both;
-}
-
 .underline {
 	border-bottom: 2px solid $color_third;
 	padding-bottom: 8px;
@@ -128,20 +101,7 @@ h1 i {
 }
 
 .check_over {
-	width: 15%;
-	height: 50px;
-	padding-top: 10px;
-	padding-bottom: 3px;
-	margin-top: -10px;
-	margin-left: 10px;
-	float: right;
-	background-color: $color_third;
-	border-bottom-right-radius: 20%;
-	border-top-right-radius: 20%;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	overflow: hidden;
-	display: none;
+	@include check_over;
 }
 
 .fas.fa-check {
@@ -158,45 +118,12 @@ h1 i {
 	-webkit-animation-iteration-count: initial;
 }
 
-.btn_plat:hover {
-	-webkit-box-shadow: 5px 5px 5px $color_primary;
-	box-shadow: 5px 5px 5px $color_primary;
-	background-color: $color_white;
-	cursor: pointer;
-	transition: 0.5s;
-	display: block;
-}
-
 .fas,
 .fa {
 	border: none;
 	font-size: 0.999em;
 }
 
-.fas.fa-heart {
-	position: absolute;
-	left: auto;
-	top: auto;
-	right: auto;
-	opacity: 0;
-	transition: all 1s ease-out;
-	outline: none;
-	display: initial;
-}
-
-.fas.fa-heart:hover {
-	opacity: 1;
-	color: $color_primary;
-}
-
-.far.fa-heart:hover {
-	opacity: 0;
-}
-
-#purpose span {
-	padding-left: 7px;
-}
-	
 
 /*/ css index */
 
@@ -204,18 +131,31 @@ header {
 	display: block;
 }
 
-#title {
+#first_§ {
 	background-color: $color_btn;
 	color: $color_font-footer;
 	padding-bottom: 30px;
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
+
+	p {
+		line-height: 1.2em;
+		font-size: 1.1em;
+	}
 }
 
-#title p {
-	line-height: 1.2em;
-	font-size: 1.1em;
+.second_§ {
+	background-color: $color_white;
+	padding-top: 40px;
+	padding-bottom: 30px;
+
+	i {
+		color: #868181;
+		margin-left: 5%;
+		padding-left: 0px;
+		padding-right: 2%;
+	}
 }
 
 .third_§ {
@@ -230,33 +170,6 @@ header {
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
-}
-
-h2 {
-	width: 80%;
-	text-align: center;
-	margin: 50px auto 20px auto;
-	font-size: x-large;
-	color: $color_font-footer;
-	line-height: initial;
-}
-
-.second_§ {
-	padding-top: 40px;
-	padding-bottom: 30px;
-}
-
-.second_§ i {
-	color: #868181;
-	margin-left: 5%;
-	padding-left: 0px;
-	padding-right: 2%;
-}
-
-h3 {
-	margin: 0 0 30px 5%;
-	text-align: left;
-	color: $color_font-footer;
 }
 
 .spinner,
@@ -274,42 +187,42 @@ h3 {
 	left: 30%;
 	right: 30%;
 
+	&::before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: 10001;
+		overflow: hidden;
+		border-top: 3px solid $color_secondary;
+		border-left: 3px solid $color_third;
+		border-right: 3px solid $color_primary;
+		border-radius: 50%;
+		animation: loader 3s;
+		-webkit-animation: loader 3s;
+		opacity: 0;
+	}
+
+	&::after {
+		box-sizing: border-box;
+		z-index: 10002;
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin: -25px 0 0 -25px;
+		border-top: 6px solid $color_third;
+		border-left: 6px solid $color_white;
+		border-right: 6px solid $color_secondary;
+		border-radius: 50%;
+		width: 50px;
+		height: 50px;
+		animation: loader_mini 3s;
+		-webkit-animation: loader_mini 3s;
+		opacity: 0;
+	}
 }
 
-.spinner::before {
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	z-index: 10001;
-	overflow: hidden;
-	border-top: 3px solid $color_secondary;
-	border-left: 3px solid $color_third;
-	border-right: 3px solid $color_primary;
-	border-radius: 50%;
-	animation: loader 3s;
-	-webkit-animation: loader 3s;
-	opacity: 0;
-}
-
-.spinner::after {
-	box-sizing: border-box;
-	z-index: 10002;
-	content: "";
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin: -25px 0 0 -25px;
-	border-top: 6px solid $color_third;
-	border-left: 6px solid $color_white;
-	border-right: 6px solid $color_secondary;
-	border-radius: 50%;
-	width: 50px;
-	height: 50px;
-	animation: loader_mini 3s;
-	-webkit-animation: loader_mini 3s;
-	opacity: 0;
-}
 
 .background_spinner {
 	content: "";
@@ -347,10 +260,18 @@ h3 {
 	background-color: white;
 }
 
-.texte_menu span {
-	margin-bottom: 0px;
-	margin-top: 5px;
-	padding-left: 0px;
+.texte_menu {
+	text-align: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+
+	span {
+		margin-bottom: 0px;
+		margin-top: 5px;
+		padding-left: 0px;
+	}
 }
 
 
@@ -359,14 +280,6 @@ h3 {
 	border-radius: 10px 10px 0 0;
 	position: relative;
 	z-index: 1;
-}
-
-.texte_menu {
-	text-align: left;
-	margin-left: 10px;
-	margin-top: 10px;
-	display: flex;
-	flex-direction: column;
 }
 
 #purpose span {
@@ -380,40 +293,9 @@ h3 {
 	}
 }
 
-
 @media screen and (min-width: 760px) {
-
-	.heart_place {
-		font-size: xx-large;
-		margin-top: 1.1em;
-	}
-
 	.texte_menu {
 		text-align: center;
-	}
-
-	#content_footer {
-		text-align: center;
-		display: block;
-	}
-
-	.footer-logo {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.footer-a {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-between;
-	}
-
-	#content_footer {
-		text-align: center;
-		display: block;
 	}
 
 	.restaurants h3 {
@@ -429,13 +311,13 @@ h3 {
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-around;
-	}
 
-	.restos .restaurants-list {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		max-width: 350px;
+		&.restaurants-list {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			max-width: 350px;
+		}
 	}
 
 	#menu {
@@ -443,22 +325,6 @@ h3 {
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-evenly;
-	}
-
-	h1 strong {
-		font-size: 1.8em;
-		text-align: center;
-	}
-
-	h1 i {
-		position: absolute;
-		margin: 0 0 0 2.9em;
-	}
-
-	h3 {
-		width: 100%;
-		text-align: center;
-		font-size: 1.5em;
 	}
 
 	.underline {

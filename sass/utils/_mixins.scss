@@ -8,6 +8,23 @@
     font-size: larger;
 }
 
+@mixin btn_plat {
+	width: 90%;
+	height: 50px;
+	margin: 0px auto 20px auto;
+	padding: 10px 0px 3px 5%;
+	border-radius: 20px;
+	color: $color_font-footer;
+	background-color: $color_white;
+	text-align: left;
+	font-size: 1.1em;
+	font-family: 'Roboto light';
+	position: relative;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
 @mixin btn_resto {
     border-radius: 5%;
     margin-bottom: 15px;
@@ -27,16 +44,19 @@
     background-color: $color_white;
 }
 
-@mixin fas-fa-check {
-    margin: auto;
-    color: $color_third;
-    background-color: $color_white;
-    padding: 5px;
-    border-radius: 100%;
-    animation: rotate_i 1s both;
-    animation-delay: 50ms;
-    animation-iteration-count: initial;
-    -webkit-animation: rotate_i 1s both;
-    -webkit-animation-delay: 50ms;
-    -webkit-animation-iteration-count: initial;
+@mixin check_over {
+	width: 15%;
+	height: 50px;
+	padding: 10px 0px 3px 0px;
+	margin-top: -10px;
+	margin-left: 10px;
+	float: right;
+	background-color: $color_third;
+	border-bottom-right-radius: 20%;
+	border-top-right-radius: 20%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	display: none;
 }
+

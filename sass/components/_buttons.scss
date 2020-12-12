@@ -1,112 +1,3 @@
-.btn_plat {
-	@include btn_plat;
-
-	p {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		margin: 5px 20px 10px 0px;
-		font-style: normal;
-		font-size: large;
-	}
-
-	span {
-		width: 90%;
-		text-overflow: ellipsis;
-		overflow: hidden;
-		white-space: nowrap;
-	}
-
-	&:hover {
-		.check_over {
-			display: -webkit-box;
-			display: -ms-flexbox;
-			display: flex;
-			animation: future_check 950ms both;
-			-webkit-animation: future_check 950ms both;
-		}
-
-		-webkit-box-shadow: 5px 5px 5px $color_primary;
-		box-shadow: 5px 5px 5px $color_primary;
-		background-color: $color_white;
-		cursor: pointer;
-		-webkit-transition: 0.5s;
-		transition: 0.5s;
-		display: block;
-	}
-}
-
-.btn_order {
-	padding: 15px 40px 15px 40px;
-	margin-top: 25px;
-	margin-bottom: 35px;
-	text-align: center;
-	display: inline-block;
-	text-decoration: none;
-	font-size: 1em;
-	border-radius: 2rem;
-	background-image: -webkit-gradient(linear, left top, left bottom, from($color_secondary), to($color_primary));
-	background-image: linear-gradient($color_secondary, $color_primary);
-	color: $color_white;
-	-webkit-transition: 1s;
-	transition: 1s;
-	outline: none;
-
-	&:hover {
-		background-color: #a877e3;
-		-webkit-box-shadow: 10px 5px 5px $color_primary;
-		box-shadow: 10px 5px 5px $color_primary;
-		cursor: pointer;
-	}
-}
-
-.btn__inactive {
-	cursor: pointer;
-	width: 100%;
-	font-size: 18px;
-	background: #e5e5de;
-	border-radius: 0%;
-	padding: 15px 0 15px 0;
-	border-right-width: 0px;
-	border-right-style: solid;
-	border-bottom-style: solid;
-	border-left-width: 0px;
-	border-left-style: solid;
-	border-bottom-width: 0px;
-	border-top: none;
-
-	div {
-		text-align: left;
-		padding-left: 25%;
-	}
-}
-
-.btn__explore {
-	padding: 15px;
-	text-align: center;
-	display: inline-block;
-	text-decoration: none;
-	font-size: 1.1em;
-	margin: 4px 2px;
-	border-radius: 2rem;
-	border: $color_primary;
-	background-image: -webkit-gradient(linear, left top, left bottom, from($color_secondary), to($color_primary));
-	background-image: linear-gradient($color_secondary, $color_primary);
-	color: $color_white;
-	-webkit-transition: 1s;
-	transition: 1s;
-
-	&:hover {
-		cursor: pointer;
-		-webkit-box-shadow: 10px 5px 5px $color_primary;
-		box-shadow: 10px 5px 5px $color_primary;
-	}
-
-	&:focus {
-		outline: none;
-	}
-}
-
 #boutons_menu {
 	width: 90%;
 	margin-left: auto;
@@ -137,43 +28,152 @@
 			color: $color_primary;
 		}
 	}
+
+	&_nouveau {
+		background-color: $color_white;
+
+		strong {
+			z-index: 2;
+			float: right;
+			margin: 4% 0 0 -28%;
+			background-color: $color_third;
+			color: green;
+			padding: 5px 10px;
+			border-radius: 5%;
+			font-weight: bold;
+			position: absolute;
+			top: 1em;
+			right: 1em;
+		}
+	}
+
+	&_explore {
+		padding: 15px;
+		text-align: center;
+		display: inline-block;
+		text-decoration: none;
+		font-size: 1.1em;
+		margin: 4px 2px;
+		border-radius: 2rem;
+		border: $color_primary;
+		background-image: -webkit-gradient(linear, left top, left bottom, from($color_secondary), to($color_primary));
+		background-image: linear-gradient($color_secondary, $color_primary);
+		color: $color_white;
+		-webkit-transition: 1s;
+		transition: 1s;
+
+		&:hover {
+			cursor: pointer;
+			-webkit-box-shadow: 10px 5px 5px $color_primary;
+			box-shadow: 10px 5px 5px $color_primary;
+		}
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	&_resto {
+		@include btn_resto;
+
+		&:hover {
+			-webkit-box-shadow: 10px 5px 5px $color_primary;
+			box-shadow: 10px 5px 5px $color_primary;
+		}
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	&_plat {
+		@include btn_plat;
+
+		p {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			margin: 5px 20px 10px 0px;
+			font-style: normal;
+			font-size: large;
+		}
+
+		span {
+			width: 90%;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			white-space: nowrap;
+		}
+
+		&:hover {
+			.check_over {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				animation: future_check 950ms both;
+				-webkit-animation: future_check 950ms both;
+			}
+
+			-webkit-box-shadow: 5px 5px 5px $color_primary;
+			box-shadow: 5px 5px 5px $color_primary;
+			background-color: $color_white;
+			cursor: pointer;
+			-webkit-transition: 0.5s;
+			transition: 0.5s;
+			display: block;
+		}
+	}
+
+	&_order {
+		padding: 15px 40px 15px 40px;
+		margin-top: 25px;
+		margin-bottom: 35px;
+		text-align: center;
+		display: inline-block;
+		text-decoration: none;
+		font-size: 1.1em;
+		border-radius: 2rem;
+		background-image: -webkit-gradient(linear, left top, left bottom, from($color_secondary), to($color_primary));
+		background-image: linear-gradient($color_secondary, $color_primary);
+		color: $color_white;
+		-webkit-transition: 1s;
+		transition: 1s;
+		outline: none;
+
+		&:hover {
+			background-color: #a877e3;
+			-webkit-box-shadow: 10px 5px 5px $color_primary;
+			box-shadow: 10px 5px 5px $color_primary;
+			cursor: pointer;
+		}
+	}
+
+	&_inactive {
+		cursor: pointer;
+		width: 100%;
+		font-size: 18px;
+		background: #e5e5de;
+		border-radius: 0%;
+		padding: 15px 0 15px 0;
+		border-right-width: 0px;
+		border-right-style: solid;
+		border-bottom-style: solid;
+		border-left-width: 0px;
+		border-left-style: solid;
+		border-bottom-width: 0px;
+		border-top: none;
+
+		div {
+			text-align: left;
+			padding-left: 25%;
+		}
+	}
 }
 
 .contenu_btn {
 	margin-top: -20px;
 	margin-left: 15px;
 	font-size: 1em;
-}
-
-.btn_resto {
-	@include btn_resto;
-
-	&:hover {
-		-webkit-box-shadow: 10px 5px 5px $color_primary;
-		box-shadow: 10px 5px 5px $color_primary;
-	}
-
-	&:focus {
-		outline: none;
-	}
-}
-
-.btn_nouveau {
-	background-color: $color_white;
-
-	strong {
-		z-index: 2;
-		float: right;
-		margin: 4% 0 0 -28%;
-		background-color: $color_third;
-		color: green;
-		padding: 5px 10px;
-		border-radius: 5%;
-		font-weight: bold;
-		position: absolute;
-		top: 1em;
-		right: 1em;
-	}
 }
 
 
@@ -190,7 +190,7 @@
 		margin-left: 1em;
 
 
-		&__explore {
+		&_explore {
 			margin-top: 2em;
 			margin-bottom: 1.5em;
 		}

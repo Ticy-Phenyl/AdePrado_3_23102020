@@ -1,0 +1,41 @@
+.heart_place {
+    display: flex;
+    position: relative;
+    margin: 1.3em 0.5em 0 0;
+    font-size: x-large;
+}
+
+.heart_index {
+    display: flex;
+    position: initial;
+    font-size: xx-large;
+    margin: -0.7em 0.5em 0 0;
+}
+
+.fas.fa-heart {
+    position: absolute;
+    left: auto;
+    top: auto;
+    right: auto;
+    opacity: 0;
+    transition: all 1s ease-out;
+    outline: none;
+    display: initial;
+
+    &:hover {
+        opacity: 1;
+        background: $color_heart;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 0px $color_white;
+    }
+}
+
+
+    @media screen and (min-width: 760px) {
+
+        .heart_place {
+            font-size: xx-large;
+            margin-top: 1.1em;
+        }
+    }

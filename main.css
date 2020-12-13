@@ -762,20 +762,20 @@ header {
   font-size: 1.1em;
 }
 
-.second_§ {
+#second_§ {
   background-color: #ffffff;
   padding-top: 40px;
   padding-bottom: 30px;
 }
 
-.second_§ i {
+#second_§ i {
   color: #868181;
   margin-left: 5%;
   padding-left: 0px;
   padding-right: 2%;
 }
 
-.third_§ {
+#third_§ {
   background-color: #DCDCDC;
   color: #424242;
   padding-bottom: 30px;

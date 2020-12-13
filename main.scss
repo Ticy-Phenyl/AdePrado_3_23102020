@@ -8,20 +8,12 @@
 
 @import "sass/base/_base.scss";
 
+@import "sass/layout/_header.scss";
 @import "sass/layout/_footer.scss";
 
 
 
 /*css restos/*/
-
-header {
-	display: block;
-	text-align: center;
-
-	button {
-		background-color: $color_white;
-	}
-}
 
 #Logo {
 	margin: 10px auto;

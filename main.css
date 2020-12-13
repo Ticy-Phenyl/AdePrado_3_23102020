@@ -212,8 +212,8 @@
   margin: 4px 2px;
   border-radius: 2em;
   border: #9356DC;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background-image: linear-gradient(#FF79DA, #9356DC);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background-image: linear-gradient(#9356DC, #FF79DA);
   color: #ffffff;
   -webkit-transition: 1s;
   transition: 1s;
@@ -317,8 +317,8 @@
   text-decoration: none;
   font-size: 1.1em;
   border-radius: 2rem;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background-image: linear-gradient(#FF79DA, #9356DC);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background-image: linear-gradient(#9356DC, #FF79DA);
   color: #ffffff;
   -webkit-transition: 1s;
   transition: 1s;
@@ -415,7 +415,7 @@
   opacity: 1;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   background: linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0px #ffffff;
 }
@@ -537,12 +537,17 @@ h6 {
   }
 }
 
+header {
+  display: block;
+  text-align: center;
+}
+
 footer {
   background-color: #424242;
   color: #ffffff;
   padding: 5%;
   font-family: 'Roboto light';
-  font-size: larger;
+  font-size: 1.1em;
 }
 
 footer a {
@@ -597,15 +602,6 @@ footer p {
 }
 
 /*css restos/*/
-header {
-  display: block;
-  text-align: center;
-}
-
-header button {
-  background-color: #ffffff;
-}
-
 #Logo {
   margin: 10px auto;
   width: 50%;

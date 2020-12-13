@@ -1,4 +1,13 @@
-
+@mixin h1 {
+		color: $color_font-footer;
+		text-align: left;
+		margin: 8% 0px 8% 4%;
+		padding-top: 40px;
+		font-family: 'Shrikhand', cursive;
+		font-size: 1.3em;
+		letter-spacing: 1px;
+		position: relative;	
+}
 
 @mixin footer {
     background-color: $color_font-footer;

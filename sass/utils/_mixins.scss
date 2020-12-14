@@ -9,6 +9,11 @@
 		position: relative;	
 }
 
+@mixin header {
+		display: block;
+		text-align: center;
+}
+
 @mixin footer {
     background-color: $color_font-footer;
     color: $color_white;

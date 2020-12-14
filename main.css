@@ -131,7 +131,7 @@
   }
 }
 
-@keyframes rotate_i {
+@-webkit-keyframes rotate_i {
   from {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
@@ -142,12 +142,12 @@
   }
 }
 
-@-webkit-keyframes rotate_i {
-  0% {
+@keyframes rotate_i {
+  from {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
   }
-  100% {
+  to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
@@ -183,10 +183,6 @@
 
 .btn:hover i {
   color: #9356DC;
-}
-
-.btn_nouveau {
-  background-color: #ffffff;
 }
 
 .btn_nouveau strong {
@@ -416,6 +412,7 @@
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   background: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0px #ffffff;
 }
@@ -744,10 +741,6 @@ footer p {
 }
 
 /*/ css index */
-header {
-  display: block;
-}
-
 #first_§ {
   background-color: #DCDCDC;
   color: #424242;

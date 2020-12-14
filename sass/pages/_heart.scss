@@ -26,6 +26,7 @@
         opacity: 1;
         background: $color_heart;
         background-clip: text;
+        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke: 0px $color_white;
     }
